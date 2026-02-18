@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /opt/app-root/src/Day3 status)",
+      "Bash(git -C /opt/app-root/src/Day3 add .claude/settings.local.json 01SDG/01SDGHub.ipynb)",
+      "Bash(git -C:*)",
+      "Bash(git -C /opt/app-root/src/Day3 push)"
+    ]
+  }
+}

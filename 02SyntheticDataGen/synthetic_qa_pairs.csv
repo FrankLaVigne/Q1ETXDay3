@@ -1,40 +1,43 @@
 question,response,faithfulness_judgment
-"What are the base ability percentages for Open Locks, Remove Traps, Pick Pockets, and Climb Walls for a Level 1 Thief?","Based on the provided document, the base ability percentages for a Level 1 Thief are as follows:
+What is the Thief's Open Locks ability score at level 8?,"At level 8, the Thief's Open Locks ability score is 60. This information is found in the Thief Abilities table in the document, under the column for Open Locks, corresponding to level 8.",YES
+How does the Thief's Move Silently ability progress from level 1 to level 15?,"Based on the provided document, the Thief's ""Move Silently"" ability progresses as follows from level 1 to level 15:
 
-- **Open Locks:** 25%
-- **Remove Traps:** 20%
-- **Pick Pockets:** 30%
-- **Climb Walls:** 80%",YES
-How do the Thief's ability percentages generally change as they progress from Level 1 to Level 19?,"As the Thief progresses from Level 1 to Level 19, the ability percentages for their skills generally increase, reflecting their growing proficiency and expertise. Here's a summary of how each ability changes over these levels:
+- Level 1: 25
+- Level 2: 30
+- Level 3: 35
+- Level 4: 40
+- Level 5: 45
+- Level 6: 50
+- Level 7: 55
+- Level 8: 60
+- Level 9: 65
+- Level 10: 68
+- Level 11: 71
+- Level 12: 74
+- Level 13: 77
+- Level 14: 80
+- Level 15: 83
 
-1. **Open Locks**: Starts at 25% at Level 1 and gradually increases to 87% by Level 19. The increase is steady, with slight acceleration as the levels progress.
+The ability increases incrementally as the Thief levels up, improving the Thief's capacity to move without being detected.",YES
+"Can a GM adjust the Thief's ability scores, and for what reason?","Yes, a Game Master (GM) can adjust a Thief's ability scores in certain situations. The document specifies that the GM may apply situational adjustments, which can either be positive or negative percentage points, to reflect the difficulty of particular actions under specific conditions. For example, climbing a slimy wall is more challenging than climbing a dry one, so the GM might penalize the roll by applying a 20% penalty to the climber's ability score in this scenario. These adjustments help maintain a sense of realism and uncertainty, enhancing the game experience by dynamically altering difficulty based on the situation. The GM also has the discretion to make any of these rolls on behalf of the player to sustain this atmosphere.",YES
+Why might a GM apply a situational adjustment when a Thief is climbing a wall?,"A Game Master (GM) might apply a situational adjustment when a Thief is climbing a wall to account for the specific conditions that could make the task more difficult or easier. According to the document, the GM can apply situational adjustments using percentage points to reflect the environmental or situational factors that affect the Thief's ability to climb. For instance, if a wall is ""slick with slime,"" it would be more challenging for the Thief to maintain a grip and climb effectively, and thus the GM might implement a penalty, such as a 20% adjustment, to represent this increased difficulty. Conversely, if the wall has ledges or rough surfaces that provide extra grip, the GM might consider applying a positive adjustment to reflect these advantageous conditions. These adjustments help to maintain uncertainty and realism in the game, ensuring that the environment's impact is considered in the Thief's actions.",YES
+What is the Thief's Climb Walls ability score at level 17?,"At level 17, the Thief's Climb Walls ability score is 96. This can be found in the Thief Abilities table under the ""Climb Walls"" column for level 17.",YES
+"If a Thief is level 10, what is their Pick Pockets ability score?","If a Thief is level 10, their Pick Pockets ability score is 74. According to the provided table, this score is determined by looking under the ""Pick Pockets"" column for level 10.",YES
+What does a Thief gain when they advance from level 3 to level 4?,"When a Thief advances from level 3 to level 4, they gain the following increases in their abilities:
 
-2. **Remove Traps**: Begins at 20% and rises to 82% by Level 19. The percentage grows consistently, indicating improved skill in trap removal over time.
+- Open Locks: Increases from 35 to 40
+- Remove Traps: Increases from 30 to 35
+- Pick Pockets: Increases from 40 to 45
+- Move Silently: Increases from 35 to 40
+- Climb Walls: Increases from 82 to 83
+- Hide: Increases from 20 to 25
+- Listen: Increases from 38 to 42
 
-3. **Pick Pockets**: Increases from 30% at Level 1 to 98% at Level 19. This is one of the abilities with the most significant growth, peaking at the higher levels.
+Each of these ability scores is enhanced by a consistent increment of 5 points, except for Climb Walls, which increases by 1.",YES
+Describe a situation where a GM might apply a bonus to a Thief's ability score.,"In a typical gameplay scenario, a Dungeon Master (GM) might apply a bonus to a Thief's ability score when the circumstances are particularly advantageous or favor the Thief's skills. Here is an example situation:
 
-4. **Move Silently**: Starts at 25% and reaches 91% at Level 19. Like open locks, this ability shows a steady increase with acceleration at higher levels.
+Imagine a Thief character attempting to pick the lock of a door with a highly familiar and simplistic mechanism. The Thief has extensive practice or specific knowledge about this type of lock due to previous encounters. In this case, the GM might determine that the Thief's proficiency or familiarity with the lock warrants a bonus to their roll. 
 
-5. **Climb Walls**: With a high starting point of 80% at Level 1, it improves to 98% by Level 19. This ability maintains a high percentage throughout and shows minor increases.
+For instance, if the lock is of a type that the Thief has frequently encountered and successfully picked in past adventures, the GM might grant a bonus of +10% to the Thief's ""Open Locks"" ability score, acknowledging the Thief's expertise in dealing with similar locks. This bonus reflects the increased likelihood of successfully picking the lock due to the Thief's experience and skill. 
 
-6. **Hide**: Begins at 10% and rises to 71% at Level 19. This shows a significant improvement but starts from a lower base compared to other skills.
-
-7. **Listen**: Starts at 30% and improves to 89% by Level 19. Similar to other skills, it exhibits a steady increase.
-
-Overall, as the levels progress, not only do the percentages rise, but the rate of increase tends to accelerate slightly, especially for some skills like picking pockets and open locks. This pattern suggests that as the Thief becomes more experienced, they improve at a faster rate in certain skills.",YES
-"If a GM decides to apply a penalty for a wall being slimy, what kind of adjustment might they make to a Thief's Climb Walls attempt?","If a GM decides to apply a penalty for a wall being slimy, they might implement a situational adjustment, such as a reduction in percentage points, to a Thief's Climb Walls attempt. The document suggests that such adjustments are applied as the GM sees fit. Specifically, the example given in the document indicates a possible penalty of 20% for climbing a wall that is slick with slime. Therefore, a GM might directly reduce the roll for Climb Walls by this percentage to reflect the increased difficulty posed by the slippery conditions.",YES
-"Can a GM facilitate rolls for a Thief's abilities? If yes, how might this affect gameplay?","Yes, according to the document, a GM (Game Master) can facilitate rolls for a Thief's abilities if needed. This means that the GM may choose to roll on behalf of the player, which can help maintain the element of uncertainty in the game by not revealing the outcome prematurely. 
-
-Facilitating rolls can affect gameplay in several ways:
-
-1. **Maintaining Momentum:** It helps keep the game moving smoothly, as it can be quicker and more convenient for the GM to handle dice rolls, allowing players to focus more on strategy and role-play.
-
-2. **Element of Surprise:** By not revealing whether a roll was successful or not until the GM completes it, it maintains suspense and excitement for both players and GM.
-
-3. **Instructor Role:** It allows the GM to act as a neutral arbiter who ensures that all rules are being followed, which can be especially useful in complex game situations.
-
-4. **Situational Adjustments:** The GM can apply situational adjustments (like penalties for difficult conditions) directly while making the roll, ensuring that all necessary factors are considered in one go.
-
-However, as the GM facilitates these rolls, they should maintain impartiality to ensure fairness and avoid giving undue advantage or disadvantage to any player. This approach helps in keeping the gameplay balanced and engaging for all participants.",YES
-Why might a Thief experience difficulty in scaling a slimy wall compared to a dry wall?,"A Thief might experience difficulty in scaling a slimy wall compared to a dry wall due to situational adjustments that the Game Master (GM) applies to reflect changing conditions. According to the document, when the wall is covered in slime, it poses additional challenges due to the decreased traction and gripping ability, making it harder for the character to climb. The GM may apply a penalty, such as a 20% reduction in the success percentage of the climb attempt, to account for the increased difficulty posed by the slippery surface. This situational adjustment is used to maintain the game's realism and challenge by incorporating environmental factors into the player's ability checks.",YES
-What is the maximum Climb Walls percentage for a Level 19 Thief?,"Based on the provided document, the maximum Climb Walls percentage for a Level 19 Thief is 98%.",YES
+On the contrary, any tougher conditions like being under time pressure or dealing with a magically concealed lock might deter bonuses or rather, introduce penalties. This dynamic enforces the influence of situational context in the game.",YES

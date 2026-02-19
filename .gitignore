@@ -15,3 +15,12 @@ env/
 
 # Jupyter Notebooks
 .ipynb_checkpoints/
+
+# Model files
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.gguf
+**/models/

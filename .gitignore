@@ -27,3 +27,6 @@ env/
 
 # Training data
 02/training_data.jsonl
+
+# Inference results
+01Inference_Time_Scaling/bon_results.json

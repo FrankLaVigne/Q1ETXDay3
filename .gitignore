@@ -26,4 +26,4 @@ env/
 **/models/
 
 # Training data
-*.jsonl
+02/training_data.jsonl

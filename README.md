@@ -1,48 +1,76 @@
 # Q1ETXDay3
 
-Day 3 lab materials for the Red Hat AI Innovation hands-on workshop. This session covers the full path from synthetic data generation through model fine-tuning, using open-source tooling on OpenShift AI with GPU acceleration.
+Day 3 lab materials for the Red Hat AI Innovation hands-on workshop. This session walks through the full model-adaptation lifecycle: review Day 2 evidence, attempt inference-time scaling, generate synthetic training data, fine-tune with QLoRA, and evaluate the results — all on OpenShift AI with GPU acceleration.
 
 ## Project Structure
 
 ```
 Q1ETXDay3/
-├── 01SDG/                          # Section 1: Synthetic Data Generation
-│   ├── 01SDGHub.ipynb              # SDG Hub pipeline notebook
-│   ├── Basic-Fantasy-RPG-Rules-r142.md  # Source document for SDG
-│   └── synthetic_qa_pairs.csv      # Generated Q&A training pairs
-├── 02/                             # Section 2: Model Download & Fine-Tuning
-│   ├── 01.ipynb                    # Model setup and training notebook
-│   └── models/                     # Downloaded model weights (git-ignored)
-├── OSFT/                           # Orthogonal Subspace Fine-Tuning
-│   └── OSFT_Interactive_Notebook.ipynb  # Interactive OFT/OSFT explainer
+├── 00Setup/                        # Section 0: Recap & Evidence
+│   └── 00_Recap_and_Evidence.ipynb
+├── 01Inference_Time_Scaling/       # Section 1: Inference-Time Scaling
+│   ├── 01_BestOfN.ipynb
+│   └── bon_results.json
+├── 02SyntheticDataGen/             # Section 2: Synthetic Data Generation
+│   ├── 01SDGHub.ipynb
+│   ├── Basic-Fantasy-RPG-Rules-r142.md
+│   ├── synthetic_qa_pairs.csv
+│   ├── sdg_run1_results.csv
+│   └── sdg_run2_results.csv
+├── 03ModelAdaptation/              # Section 3: Model Fine-Tuning (QLoRA)
+│   ├── 01ModelAdaptation.ipynb
+│   ├── 01ModelAdaptation-Succeeded.ipynb
+│   ├── 01Model-Adaptation.ipynb
+│   ├── 01SFT_and_OSFT_Training.ipynb
+│   ├── modeltraining.ipynb
+│   ├── explanation.md
+│   └── training_data.jsonl
+├── 04Evaluation/                   # Section 4: Evaluation
+│   ├── 01_Evaluation.ipynb
+│   └── caveats.md
+├── prebuilt/                       # Pre-generated results for offline use
+│   ├── bon_results.json
+│   ├── eval_results.json
+│   ├── eval_with_context.json
+│   ├── sdg_run1_results.csv
+│   └── sdg_run2_results.csv
+├── config.py
 ├── .gitignore
 └── README.md
 ```
 
 ## Sections
 
-### 1 - Synthetic Data Generation (SDG Hub)
+### 0 - Recap and Evidence
 
-Uses [SDG Hub](https://github.com/red-hat-ai-innovation/sdg-hub) to transform ingested documents into structured question-answer pairs suitable for fine-tuning. The notebook walks through flow discovery, model configuration, schema setup, seed dataset construction, dry runs, generation, iteration, and export.
+Reconnects participants to the Day 2 workflow, loads the evaluation results from that session, and builds the evidence-based case for why RAG alone was insufficient and model adaptation is the next step.
 
-### 2 - Model Download & Fine-Tuning
+### 1 - Inference-Time Scaling (Best-of-N)
 
-Downloads IBM Granite 3.2 8B Instruct from Hugging Face and prepares it for fine-tuning with [Training Hub](https://github.com/red-hat-ai-innovation/training-hub). Covers environment setup including flash-attn and CUDA dependencies on an NVIDIA L40S GPU.
+Before committing to training, tests whether spending more compute at inference time can close the gap. Implements Best-of-N sampling to generate multiple candidate answers and select the best one, establishing a performance ceiling for the base model.
 
-### OSFT - Orthogonal Subspace Fine-Tuning
+### 2 - Synthetic Data Generation (SDG Hub)
 
-An interactive notebook exploring OFT and OSFT concepts with visualizations: orthogonal matrix properties, hyperspherical energy preservation, SVD decomposition, gradient projection, and parameter efficiency comparisons against LoRA and full fine-tuning.
+Uses [SDG Hub](https://github.com/red-hat-ai-innovation/sdg-hub) to transform the source document into structured question-answer pairs suitable for fine-tuning. Covers flow discovery, model configuration, schema setup, seed dataset construction, dry runs, generation, iteration, and export.
+
+### 3 - Model Adaptation (QLoRA Fine-Tuning)
+
+Fine-tunes IBM Granite 3.2 8B Instruct using QLoRA (4-bit quantized LoRA) with the synthetic data generated in Section 2. Includes multiple notebook variants and an explanation of SFT vs OSFT training approaches. The successful training run is captured in `01ModelAdaptation-Succeeded.ipynb`.
+
+### 4 - Evaluation
+
+Loads the base model alongside the trained LoRA adapter and evaluates whether model adaptation closed the performance gap identified in Section 0. Includes discussion of caveats and limitations.
 
 ## Environment
 
 - Python 3.12
 - PyTorch 2.7 + CUDA 12.8
-- NVIDIA L40S (46 GB VRAM)
+- NVIDIA L40S (46 GB) or L4 (24 GB)
 - OpenShift AI (RHODS)
 
 ## Key Dependencies
 
 - `sdg-hub[examples]` - Synthetic data generation pipelines
-- `training-hub[cuda]` - Model fine-tuning framework
-- `flash-attn` - Flash Attention for efficient training
-- `transformers`, `datasets` - Hugging Face ecosystem
+- `unsloth` - Efficient QLoRA fine-tuning
+- `peft`, `bitsandbytes` - Parameter-efficient fine-tuning and quantization
+- `transformers`, `datasets`, `accelerate` - Hugging Face ecosystem

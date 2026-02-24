@@ -18,10 +18,8 @@ Q1ETXDay3/
 │   ├── sdg_run1_results.csv
 │   └── sdg_run2_results.csv
 ├── 03ModelAdaptation/              # Section 3: Model Fine-Tuning (QLoRA)
-│   ├── 01ModelAdaptation.ipynb
 │   ├── 01ModelAdaptation-Succeeded.ipynb
-│   ├── 01Model-Adaptation.ipynb
-│   ├── 01SFT_and_OSFT_Training.ipynb
+│   ├── 01ModelAdaptation.ipynb
 │   ├── modeltraining.ipynb
 │   ├── explanation.md
 │   └── training_data.jsonl
@@ -55,7 +53,7 @@ Uses [SDG Hub](https://github.com/red-hat-ai-innovation/sdg-hub) to transform th
 
 ### 3 - Model Adaptation (QLoRA Fine-Tuning)
 
-Fine-tunes IBM Granite 3.2 8B Instruct using QLoRA (4-bit quantized LoRA) with the synthetic data generated in Section 2. Includes multiple notebook variants and an explanation of SFT vs OSFT training approaches. The successful training run is captured in `01ModelAdaptation-Succeeded.ipynb`.
+Fine-tunes IBM Granite 3.2 8B Instruct using QLoRA (4-bit quantized LoRA) with the synthetic data generated in Section 2. The primary notebook is `01ModelAdaptation-Succeeded.ipynb`, which includes the full training pipeline plus a quick inference check against the hardest evaluation questions.
 
 ### 4 - Evaluation
 
@@ -70,7 +68,7 @@ Loads the base model alongside the trained LoRA adapter and evaluates whether mo
 
 ## Key Dependencies
 
-- `sdg-hub[examples]` - Synthetic data generation pipelines
+- `sdg-hub` - Synthetic data generation pipelines
 - `unsloth` - Efficient QLoRA fine-tuning
 - `peft`, `bitsandbytes` - Parameter-efficient fine-tuning and quantization
 - `transformers`, `datasets`, `accelerate` - Hugging Face ecosystem

@@ -26,6 +26,8 @@ Q1ETXDay3/
 ├── 04Evaluation/                   # Section 4: Evaluation
 │   ├── 01_Evaluation.ipynb
 │   └── caveats.md
+├── 05Conclusion/                   # Section 5: Conclusion & Discussion
+│   └── 01_Synthesis.ipynb
 ├── prebuilt/                       # Pre-generated results for offline use
 │   ├── bon_results.json
 │   ├── eval_results.json
@@ -58,6 +60,10 @@ Fine-tunes IBM Granite 3.2 8B Instruct using QLoRA (4-bit quantized LoRA) with t
 ### 4 - Evaluation
 
 Loads the base model alongside the trained LoRA adapter and evaluates whether model adaptation closed the performance gap identified in Section 0. Includes discussion of caveats and limitations.
+
+### 5 - Conclusion
+
+A facilitated discussion (no code) that translates the lab results into customer-facing language. Covers the three questions customers actually ask, the escalation ladder as a trust-building tool, honest interpretation of the evaluation results, and what to bring into the next customer meeting.
 
 ## Environment
 

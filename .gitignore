@@ -24,6 +24,8 @@ env/
 *.onnx
 *.gguf
 **/models/
+lora_output/
+unsloth_compiled_cache/
 
 # Training data
 02/training_data.jsonl

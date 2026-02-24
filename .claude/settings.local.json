@@ -7,7 +7,23 @@
       "Bash(git -C /opt/app-root/src/Day3 push)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(python3:*)",
+      "Bash(pip show:*)",
+      "Bash(python3.12:*)",
+      "Bash(git config:*)",
+      "Bash(tail:*)",
+      "Bash(wc:*)",
+      "Bash(cd /opt/app-root/src/Q1ETXDay3 && git remote set-url origin https://franklavigne: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@github.com/FrankLaVigne/Q1ETXDay3.git && git push origin main 2>&1)",
+      "Bash(git remote:*)",
+      "Bash(gh api:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(cd /opt/app-root/src/Q1ETXDay3/03ModelAdaptation && pip uninstall mamba-ssm causal-conv1d -y 2>&1)",
+      "Bash(pip uninstall:*)",
+      "Bash(python:*)",
+      "Bash(jupyter nbconvert:*)"
     ]
   }
 }

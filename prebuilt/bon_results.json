@@ -6,15 +6,15 @@
     "category": "explicit_rule",
     "day2_answer": "If a Thief fails an Open Locks attempt, they must wait until they have gained another level of experience before trying again.",
     "day2_classification": "pass",
-    "bon_answer": "If a Thief fails an Open Locks attempt, they must wait until they have gained another level of experience before trying again. This rule is stated in the context, which mentions that \"If the attempt fails, the Thief must wait until they have gained another level of experience before trying again.\"",
+    "bon_answer": "If a Thief fails an Open Locks attempt, they must wait until they have gained another level of experience before trying again.",
     "bon_scores": [
-      0.0,
-      0.0,
       1.0,
+      1.0,
+      0.0,
       0.0,
       0.0
     ],
-    "bon_selected_index": 2,
+    "bon_selected_index": 0,
     "bon_n_candidates": 5
   },
   {
@@ -24,7 +24,7 @@
     "category": "terminology",
     "day2_answer": "According to the provided context, Elves never roll larger than six-sided dice (d6) for hit points. The reason for this restriction is not explicitly stated in the context.",
     "day2_classification": "implicit_reasoning_failure",
-    "bon_answer": "According to the provided context, Elves never roll larger than six-sided dice (d6) for hit points. This is a restriction specific to Elves and is not explicitly explained further in the given context.",
+    "bon_answer": "According to the provided context, Elves never roll larger than six-sided dice (d6) for hit points. However, the context does not provide a specific rule or explanation as to why this restriction exists. Therefore, I can only confirm the restriction based on the given information.",
     "bon_scores": [
       1.0,
       0.0,
@@ -42,15 +42,15 @@
     "category": "implicit_reasoning",
     "day2_answer": "Yes, according to the provided context, characters who can cast spells may wear leather armor.",
     "day2_classification": "pass",
-    "bon_answer": "Yes, an Elf character can wear leather armor and cast spells. This is because Elves are a combination class that advances as both Fighters and Magic-Users simultaneously. Unlike Magic-Users, who may not wear armor, Elves are not subject to the Magic-User restriction and can cast spells while wearing armor. Leather armor falls under the category of armor that Elves can wear without violating their spellcasting ability.",
+    "bon_answer": "Yes, an Elf character can wear leather armor and cast spells. Elves are a combination class, advancing as both Fighters and Magic-Users simultaneously. Unlike Magic-Users, who may not wear armor, Elves can cast spells while wearing armor. Leather armor is a type of armor that Elves can wear without losing their ability to cast spells.",
     "bon_scores": [
       0.0,
-      1.0,
       0.0,
       0.0,
-      0.0
+      0.0,
+      1.0
     ],
-    "bon_selected_index": 1,
+    "bon_selected_index": 4,
     "bon_n_candidates": 5
   },
   {
@@ -60,25 +60,7 @@
     "category": "table_lookup",
     "day2_answer": "The context does not provide specific information on the saving throw for a 3rd level Fighter against Dragon Breath. However, it does mention that characters may make a save vs. Dragon Breath for half damage. The exact saving throw (e.g., Strength, Dexterity, etc.) is not specified in the provided context.",
     "day2_classification": "implicit_reasoning_failure",
-    "bon_answer": "3rd level Fighters have a saving throw of 15 against Dragon Breath. This is listed in the \"Dragon Breath\" column of the Fighter class table for levels 2-3.",
-    "bon_scores": [
-      1.0,
-      0.0,
-      0.0,
-      0.0,
-      0.0
-    ],
-    "bon_selected_index": 0,
-    "bon_n_candidates": 5
-  },
-  {
-    "id": "q05",
-    "question": "How does a Cleric turn undead?",
-    "expected": "The Cleric rolls 2d6 and compares the result to the Turn Undead table. Success depends on the Cleric's level and the type of undead.",
-    "category": "multi_step_rule",
-    "day2_answer": "To turn undead, the GM looks up the Cleric's level on the Clerics vs. Undead table and cross-references it with the undead type or Hit Dice. If the table indicates 'No' for that combination, it is not possible for the Cleric to affect that type of undead monster. If the table gives a number, that is the minimum number needed on 1d20 to Turn that sort of undead. If the table says 'T' for that combination, that type of undead is automatically affected (no roll needed). If the result shown is a 'D,' then that sort of undead will be Damaged (and possibly destroyed) rather than merely Turned. The player should always roll, even if the GM knows the character can't succeed (or can't fail), as telling the player whether or not to roll may reveal too much.",
-    "day2_classification": "pass",
-    "bon_answer": "A Cleric turns undead by looking up their level on the Clerics vs. Undead table and cross-referencing it with the undead type or Hit Dice. If the table indicates \"No,\" it is not possible for the Cleric to affect that type of undead monster. If the table gives a number, that is the minimum number needed on 1d20 to Turn that sort of undead. If the table says \"T,\" that type of undead is automatically affected (no roll needed). If the result shown is a \"D,\" then that sort of undead will be Damaged (and possibly destroyed) rather than merely Turned. The player should always roll, even if the GM knows the character can't succeed (or can't fail). If the attempt is successful, 2d6 Hit Dice of undead are affected. Turned undead will flee the Cleric and will not return for the duration of the encounter.",
+    "bon_answer": "15 is the saving throw for a 3rd level Fighter against Dragon Breath. This information can be found in the \"Fighter\" table under the \"Dragon Breath\" category for level 2-3, which includes 3rd level Fighters.",
     "bon_scores": [
       0.0,
       1.0,
@@ -90,21 +72,39 @@
     "bon_n_candidates": 5
   },
   {
+    "id": "q05",
+    "question": "How does a Cleric turn undead?",
+    "expected": "The Cleric rolls 2d6 and compares the result to the Turn Undead table. Success depends on the Cleric's level and the type of undead.",
+    "category": "multi_step_rule",
+    "day2_answer": "To turn undead, the GM looks up the Cleric's level on the Clerics vs. Undead table and cross-references it with the undead type or Hit Dice. If the table indicates 'No' for that combination, it is not possible for the Cleric to affect that type of undead monster. If the table gives a number, that is the minimum number needed on 1d20 to Turn that sort of undead. If the table says 'T' for that combination, that type of undead is automatically affected (no roll needed). If the result shown is a 'D,' then that sort of undead will be Damaged (and possibly destroyed) rather than merely Turned. The player should always roll, even if the GM knows the character can't succeed (or can't fail), as telling the player whether or not to roll may reveal too much.",
+    "day2_classification": "pass",
+    "bon_answer": "A Cleric turns undead by looking up their level on the Clerics vs. Undead table and cross-referencing it with the type or Hit Dice of the undead monster. If the table indicates \"No\" for that combination, it is not possible for the Cleric to affect that type of undead monster. If the table gives a number, that is the minimum number needed on 1d20 to Turn that sort of undead. If the table says \"T\", that type of undead is automatically affected (no roll needed). If the result shown is a \"D\", then that sort of undead will be Damaged (and possibly destroyed) rather than merely Turned. If the attempt is successful, 2d6 Hit Dice of undead are affected. Turned undead will flee the Cleric and will not return for the duration of the encounter. The player should always roll, even if the GM knows the character can't succeed (or can't fail), as telling the player whether or not to roll may reveal too much.",
+    "bon_scores": [
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "bon_selected_index": 2,
+    "bon_n_candidates": 5
+  },
+  {
     "id": "q06",
     "question": "If a character has a Strength of 16, what bonus do they get on melee attack rolls?",
     "expected": "A Strength score of 16 gives a +2 bonus, which applies to melee attack rolls and damage rolls.",
     "category": "table_lookup",
     "day2_answer": "The provided context does not specify how Strength affects melee attack rolls. In Basic Fantasy RPG, it is recommended not to waste time in detailing the ability score or other statistics of characters further, implying that such specifics are not provided. Therefore, I cannot determine the melee attack bonus for a character with a Strength of 16 based on the given context.",
     "day2_classification": "implicit_reasoning_failure",
-    "bon_answer": "A character with a Strength of 16 gets a +2 bonus on melee attack rolls. This is determined by the ability bonus or penalty for Strength, which is +1 for a score of 13-15 and +2 for a score of 16-17, as shown in the table under Character Abilities. This bonus applies to all attack and damage rolls in melee (hand to hand) combat.",
+    "bon_answer": "A character with a Strength score of 16 receives a bonus of +2 on melee attack rolls. This is because, according to the table in the provided context, a Strength score of 16 corresponds to a bonus of +2. This bonus is applied to all attack and damage rolls in melee combat.",
     "bon_scores": [
-      1.0,
       0.0,
+      1.0,
       0.0,
       0.0,
       0.0
     ],
-    "bon_selected_index": 0,
+    "bon_selected_index": 1,
     "bon_n_candidates": 5
   },
   {
@@ -114,7 +114,7 @@
     "category": "terminology",
     "day2_answer": "In the Basic Fantasy RPG system, a retainer and a hireling are both types of NPCs that can be hired by player characters. However, the key difference lies in their loyalty and willingness to take risks.\n\nRetainers are close associates of their employer and are typically very loyal. They are willing to take reasonable risks, including accompanying a player character into dangerous places like dungeons, lairs, or ruins. Retainers are hired for a share of treasure (usually at least 15% of the employer's income) plus support costs, which include weapons, armor, rations, and basic equipment provided by the employer.\n\nOn the other hand, the context does not provide specific details about hirelings other than stating they are another category of NPCs available for hire. It can be inferred that hirelings might not be as loyal or willing to take risks as retainers, but the exact terms of their employment, such as payment and risk tolerance, are not specified in the provided context. Therefore, while retainers are described in detail, the distinction between retainers and hirelings beyond loyalty and risk tolerance is not explicitly stated.",
     "day2_classification": "implicit_reasoning_failure",
-    "bon_answer": "A retainer is a Non-Player Character who is a close associate and very loyal to their employer, willing to take reasonable risks and accompany them into dangerous places like dungeons or ruins. They are hired for a share of treasure (usually at least 15% of the employer's income) plus support costs. The number of retainers a character may hire is limited by the character's Charisma score.\n\nOn the other hand, a hireling is a normal person hired by the character to perform specific services. They do not normally go on adventures or enter dungeons.\n\nIn summary, the main differences between a retainer and a hireling are their level of involvement in dangerous activities and their relationship with the employer. Retainers are more closely associated with their employer and are willing to accompany them into dangerous situations, while hirelings are simply hired to perform specific services and do not typically engage in such risky activities.",
+    "bon_answer": "A retainer is a Non-Player Character who is a close associate of a player character and is typically very loyal, willing to take reasonable risks, including accompanying the player character into dangerous places like dungeons, lairs, or ruins. Retainers are hired for a share of treasure (usually at least 15% of the employer's income) plus support costs, which include weapons, armor, rations, and basic equipment provided by the employer. The number of retainers a character may hire is limited by the character's Charisma score.\n\nOn the other hand, a hireling is a normal person hired by the character to perform specific services. They do not normally go on adventures or enter dungeons.\n\nIn summary, the main difference lies in their roles and capabilities. Retainers are trusted companions who accompany the player character into dangerous situations, while hirelings are ordinary individuals hired for specific tasks and do not typically engage in adventuring or dungeon exploration.",
     "bon_scores": [
       1.0,
       0.0,
@@ -136,7 +136,7 @@
     "bon_scores": [
       1.0,
       1.0,
-      1.0,
+      0.0,
       0.0,
       1.0
     ],
@@ -150,15 +150,15 @@
     "category": "explicit_rule",
     "day2_answer": "When a character's hit point total reaches exactly 0, the character may be dead. However, this is not necessarily the end for the character; the character sheet should not be torn up.",
     "day2_classification": "pass",
-    "bon_answer": "At exactly 0 hit points, a character may be dead. However, this does not necessarily mean the end for the character. The text suggests that further actions or role-playing opportunities could still arise, as indicated by the statement \"don't tear up your character sheet.\"",
+    "bon_answer": "At exactly 0 hit points, a character may be dead. However, this is not necessarily the end for the character. The rules suggest not to tear up the character sheet, implying that there may be ways to revive or continue the character's story.",
     "bon_scores": [
       0.0,
       0.0,
-      1.0,
       0.0,
+      1.0,
       0.0
     ],
-    "bon_selected_index": 2,
+    "bon_selected_index": 3,
     "bon_n_candidates": 5
   },
   {
@@ -168,7 +168,7 @@
     "category": "implicit_reasoning",
     "day2_answer": "No, according to the provided context, Halflings may not use Large weapons, and longbows are typically around 6 feet unstrung, which would be considered a Large weapon for Halflings. Therefore, Halflings cannot use longbows.",
     "day2_classification": "pass",
-    "bon_answer": "No, a Halfling cannot use a longbow. The context states that Halflings must use Medium weapons two-handed and may not use Large weapons. The longbow is classified as a Large weapon in the provided weapons table.",
+    "bon_answer": "No, a Halfling cannot use a longbow. According to the context, Halflings must use Medium weapons two-handed and may not use Large weapons. The longbow is classified as a Large weapon, making it inappropriate for Halflings to use.",
     "bon_scores": [
       0.0,
       0.0,

@@ -33,9 +33,10 @@ unsloth_compiled_cache/
 # Training data
 02/training_data.jsonl
 
-# SDG run outputs (canonical copies live in prebuilt/)
+# SDG outputs (canonical copies live in prebuilt/)
 02SyntheticDataGen/sdg_run1_results.csv
 02SyntheticDataGen/sdg_run2_results.csv
+02SyntheticDataGen/synthetic_qa_pairs.csv
 
 # Inference results
 01Inference_Time_Scaling/bon_results.json

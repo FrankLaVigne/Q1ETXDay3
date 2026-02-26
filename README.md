@@ -1,6 +1,6 @@
-# Red Hat AI Innovation Workshop - Model Adaptation Lab
+# AI Continuum Series - Model Adaptation Lab
 
-Day 3 lab materials for the Red Hat AI Innovation hands-on workshop. This session walks through the full model-adaptation lifecycle: review Day 2 evidence, attempt inference-time scaling, generate synthetic training data, fine-tune with QLoRA, and evaluate the results — all on OpenShift AI with GPU acceleration.
+Day 3 lab materials for the AI Continuum hands-on workshop series. This session walks through the full model-adaptation lifecycle: review Day 2 evidence, attempt inference-time scaling, generate synthetic training data, fine-tune with QLoRA, and evaluate the results — all on OpenShift AI with GPU acceleration.
 
 ## Project Structure
 

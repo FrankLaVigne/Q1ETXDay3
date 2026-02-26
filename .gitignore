@@ -30,8 +30,9 @@ env/
 lora_output/
 unsloth_compiled_cache/
 
-# Training data
-02/training_data.jsonl
+# Training data and outputs
+**/training_data.jsonl
+**/lora_data_output/
 
 # SDG outputs (canonical copies live in prebuilt/)
 02SyntheticDataGen/sdg_run1_results.csv

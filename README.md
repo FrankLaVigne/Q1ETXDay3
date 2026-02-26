@@ -20,6 +20,8 @@ Q1ETXDay3/
 │   └── 02_MultiModelEval.ipynb
 ├── 05Conclusion/                   # Section 5: Conclusion & Discussion
 │   └── 01_Synthesis.ipynb
+├── extras/                         # Supplementary materials
+│   └── Addendum.ipynb
 ├── prebuilt/                       # Pre-generated results for offline use
 │   ├── bon_results.json
 │   ├── eval_results.json

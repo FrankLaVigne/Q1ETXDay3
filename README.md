@@ -9,23 +9,15 @@ Q1ETXDay3/
 ├── 00Setup/                        # Section 0: Recap & Evidence
 │   └── 00_Recap_and_Evidence.ipynb
 ├── 01Inference_Time_Scaling/       # Section 1: Inference-Time Scaling
-│   ├── 01_BestOfN.ipynb
-│   └── bon_results.json
+│   └── 01_BestOfN.ipynb
 ├── 02SyntheticDataGen/             # Section 2: Synthetic Data Generation
 │   ├── 01SDGHub.ipynb
-│   ├── Basic-Fantasy-RPG-Rules-r142.md
-│   ├── synthetic_qa_pairs.csv
-│   ├── sdg_run1_results.csv
-│   └── sdg_run2_results.csv
+│   └── Basic-Fantasy-RPG-Rules-r142.md
 ├── 03ModelAdaptation/              # Section 3: Model Fine-Tuning (QLoRA)
-│   ├── 01ModelAdaptation-Succeeded.ipynb
-│   ├── 01ModelAdaptation.ipynb
-│   ├── modeltraining.ipynb
-│   ├── explanation.md
-│   └── training_data.jsonl
+│   └── 01ModelAdaptation-Succeeded.ipynb
 ├── 04Evaluation/                   # Section 4: Evaluation
 │   ├── 01_Evaluation.ipynb
-│   └── caveats.md
+│   └── 02_MultiModelEval.ipynb
 ├── 05Conclusion/                   # Section 5: Conclusion & Discussion
 │   └── 01_Synthesis.ipynb
 ├── prebuilt/                       # Pre-generated results for offline use
@@ -33,7 +25,8 @@ Q1ETXDay3/
 │   ├── eval_results.json
 │   ├── eval_with_context.json
 │   ├── sdg_run1_results.csv
-│   └── sdg_run2_results.csv
+│   ├── sdg_run2_results.csv
+│   └── synthetic_qa_pairs.csv
 ├── config.py
 ├── .gitignore
 └── README.md
@@ -55,11 +48,11 @@ Uses [SDG Hub](https://github.com/red-hat-ai-innovation/sdg-hub) to transform th
 
 ### 3 - Model Adaptation (QLoRA Fine-Tuning)
 
-Fine-tunes IBM Granite 3.2 8B Instruct using QLoRA (4-bit quantized LoRA) with the synthetic data generated in Section 2. The primary notebook is `01ModelAdaptation-Succeeded.ipynb`, which includes the full training pipeline plus a quick inference check against the hardest evaluation questions.
+Fine-tunes IBM Granite 3.2 8B Instruct using QLoRA (4-bit quantized LoRA) with the synthetic data generated in Section 2. Includes the full training pipeline plus a quick inference check against the hardest evaluation questions.
 
 ### 4 - Evaluation
 
-Loads the base model alongside the trained LoRA adapter and evaluates whether model adaptation closed the performance gap identified in Section 0. Includes discussion of caveats and limitations.
+Loads the base model alongside the trained LoRA adapter and evaluates whether model adaptation closed the performance gap identified in Section 0. `01_Evaluation.ipynb` tests the lab-trained Granite 8B adapter. `02_MultiModelEval.ipynb` compares four fine-tuned models (Granite 8B, Granite 2B, Phi-3 Mini, Qwen2.5 3B) across architectures and sizes to answer whether architecture matters when training data is identical.
 
 ### 5 - Conclusion
 

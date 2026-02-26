@@ -40,7 +40,7 @@ Reconnects participants to the Day 2 workflow, loads the evaluation results from
 
 ### 1 - Inference-Time Scaling (Best-of-N)
 
-Before committing to training, tests whether spending more compute at inference time can close the gap. Implements Best-of-N sampling to generate multiple candidate answers and select the best one, establishing a performance ceiling for the base model.
+Before committing to training, tests whether spending more compute at inference time can close the gap. Uses [ITS Hub](https://github.com/Red-Hat-AI-Innovation-Team/its_hub) to implement Best-of-N sampling — generate multiple candidate answers and select the best one, establishing a performance ceiling for the base model.
 
 ### 2 - Synthetic Data Generation (SDG Hub)
 
@@ -67,7 +67,9 @@ A facilitated discussion (no code) that translates the lab results into customer
 
 ## Key Dependencies
 
+- `its-hub` - Inference-time scaling (Best-of-N)
 - `sdg-hub` - Synthetic data generation pipelines
+- `training-hub` - Model fine-tuning (LoRA SFT)
 - `unsloth` - Efficient QLoRA fine-tuning
 - `peft`, `bitsandbytes` - Parameter-efficient fine-tuning and quantization
 - `transformers`, `datasets`, `accelerate` - Hugging Face ecosystem

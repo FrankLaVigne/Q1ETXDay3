@@ -14,7 +14,7 @@ Q1ETXDay3/
 │   ├── 01SDGHub.ipynb
 │   └── Basic-Fantasy-RPG-Rules-r142.md
 ├── 03ModelAdaptation/              # Section 3: Model Fine-Tuning (QLoRA)
-│   └── 01ModelAdaptation-Succeeded.ipynb
+│   └── 01ModelAdaptation.ipynb
 ├── 04Evaluation/                   # Section 4: Evaluation
 │   ├── 01_Evaluation.ipynb
 │   └── 02_MultiModelEval.ipynb

@@ -21,7 +21,7 @@ Q1ETXDay3/
 ├── 05Conclusion/                   # Section 5: Conclusion & Discussion
 │   └── 01_Synthesis.ipynb
 ├── extras/                         # Supplementary materials
-│   └── Addendum.ipynb
+│   └── WhatsNext.ipynb
 ├── prebuilt/                       # Pre-generated results for offline use
 │   ├── bon_results.json
 │   ├── eval_results.json
